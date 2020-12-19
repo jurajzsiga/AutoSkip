@@ -5,7 +5,6 @@ console.log('here', appWrapper)
 
 let observer = new MutationObserver(function (mutation, observer) {
   $(appWrapper).find("a[aria-label='Skip Intro']").each(function (index) {
-    console.log($(this)[0])
     $(this)[0].click()
   })
 })
